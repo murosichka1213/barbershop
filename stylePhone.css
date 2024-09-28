@@ -1,0 +1,198 @@
+@media (max-width: 1440px) {
+	.nav__conatiner {
+		width: 1080px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+@media (max-width: 1100px) {
+	.nav {
+		background-image: url("./photos/navbar_bg.jpg");
+		height: 80px;
+		display: flex;
+		align-items: center;
+		padding-left: 20px;
+	}
+
+	#burgerMenu {
+		display: block;
+		width: 50px;
+		height: 50px;
+	}
+
+	.nav__conatiner {
+		display: none;
+	}
+}
+
+@media (max-width: 768px) {
+	.nav {
+		height: auto;
+		padding: 20px 15px;
+	}
+
+	.nav__container {
+		width: 100%;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	.nav__container a {
+		font-size: 24px;
+		margin: 10px 0;
+	}
+
+	.nav__container p {
+		font-size: 16px;
+		margin-top: 10px;
+	}
+
+	/* firstSection */
+	.firstSection {
+		flex-direction: column;
+		padding: 32px 0;
+		gap: 24px;
+	}
+
+	.firstSection__content__title {
+		font-size: 28px;
+	}
+
+	.firstSection__content__caption {
+		font-size: 18px;
+	}
+
+	/* secondSection */
+	.secondSection__title {
+		font-size: 36px; /* Зменшити розмір заголовків */
+	}
+
+	.first__item,
+	.second__item,
+	.third__item {
+		flex-direction: column; /* Елементи в стовпчик */
+		align-items: center;
+		gap: 32px;
+	}
+
+	.first__item img,
+	.second__item img,
+	.third__item img {
+		margin: 0 auto;
+		width: 90%; /* Зображення на всю ширину */
+		height: auto;
+	}
+
+	.first__item__price,
+	.second__item__price,
+	.third__item__price {
+		margin: 0 auto;
+		width: 90%; /* Зробити ці блоки адаптивними */
+	}
+
+	.first__item__price__title,
+	.second__item__price__title,
+	.third__item__price__title {
+		font-size: 24px;
+	}
+
+	.first__item__price__container p,
+	.second__item__price__container p,
+	.third__item__price__container p {
+		font-size: 20px;
+	}
+
+	/* thirdSection */
+	.thirdSection__title {
+		font-size: 36px;
+	}
+
+	.thirdSection__content {
+		flex-direction: column;
+		gap: 32px;
+	}
+
+	.thirdSection__content__text h3 {
+		font-size: 28px;
+	}
+
+	.thirdSection__content__text__color {
+		font-size: 20px;
+	}
+
+	.thirdSection__content__text__info {
+		font-size: 18px;
+	}
+
+	/* fourthSection */
+	.fourthSection__title {
+		font-size: 36px;
+	}
+
+	.fourthSection__content {
+		flex-direction: column;
+		align-items: center;
+		gap: 32px;
+	}
+
+	/* footer */
+	.footer {
+		flex-direction: column;
+		gap: 32px;
+		padding: 32px 16px;
+	}
+
+	.footer__title {
+		font-size: 28px; /* Зменшити заголовок у футері */
+	}
+}
+
+/* Додаткові медіа-запити для дуже маленьких екранів (до 480px) */
+@media (max-width: 480px) {
+	.nav__container a {
+		font-size: 20px;
+	}
+
+	.nav__container p {
+		font-size: 14px;
+	}
+
+	.firstSection__content__title {
+		font-size: 24px;
+	}
+
+	.firstSection__content__caption {
+		font-size: 16px;
+	}
+
+	.first__item__price__title,
+	.second__item__price__title,
+	.third__item__price__title {
+		font-size: 20px;
+	}
+
+	.first__item__price__container p,
+	.second__item__price__container p,
+	.third__item__price__container p {
+		font-size: 18px;
+	}
+
+	.thirdSection__content__text h3 {
+		font-size: 24px;
+	}
+
+	.thirdSection__content__text__color {
+		font-size: 18px;
+	}
+
+	.thirdSection__content__text__info {
+		font-size: 16px;
+	}
+
+	.footer__title {
+		font-size: 24px;
+	}
+}
