@@ -16,8 +16,8 @@ html {
 
 /* nav */
 .nav {
-	background-image: url("./photos/navbar_bg.jpg");
-	background-repeat: no-repeat;
+	background-image: url("/photos/navbar_bg.jpg");
+	/* background-repeat: no-repeat; */
 	background-size: cover;
 	background-position: center;
 	height: 120px;
@@ -33,23 +33,25 @@ html {
 
 .nav__conatiner a {
 	font-family: "Roboto", sans-serif;
-	font-size: 32px;
+	font-size: 24px;
 	text-decoration: none;
 	color: black;
 }
-
-.nav__conatiner p {
-	font-family: "Roboto", sans-serif;
-	font-size: 18px;
-	color: black;
+.nav__conatiner a:hover {
+	color:rebeccapurple;
 }
 
+
 /* social */
+.nav__links{
+	display: flex;
+	gap: 1rem;
+}
 #instagram,
 #telegram {
 	display: block;
-	width: 44px;
-	height: 44px;
+	width: 55px;
+	height: 55px;
 }
 
 /* burger Menu */
@@ -106,7 +108,7 @@ html {
 .firstSection__content__title {
 	color: #000;
 	font-family: "Roboto", sans-serif;
-	font-size: 32px;
+	font-size: 24px;
 	font-weight: 400;
 	margin-bottom: 12px;
 }
@@ -114,7 +116,7 @@ html {
 .firstSection__content__caption {
 	color: #000;
 	font-family: "Actor", sans-serif;
-	font-size: 20px;
+	font-size:18px;
 	font-weight: 400;
 }
 
@@ -131,7 +133,7 @@ html {
 	color: #000;
 	text-align: center;
 	font-family: "Actor", sans-serif;
-	font-size: 48px;
+	font-size: 24px;
 	font-weight: 400;
 	padding-top: 36px;
 	padding-bottom: 64px;
@@ -162,7 +164,7 @@ html {
 .first__item__price__title {
 	color: #000;
 	font-family: "Roboto", sans-serif;
-	font-size: 32px;
+	font-size: 24px;
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
@@ -177,7 +179,7 @@ html {
 .first__item__price__container p {
 	color: #000;
 	font-family: "Jua", sans-serif;
-	font-size: 24px;
+	font-size: 18px;
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
@@ -209,7 +211,7 @@ html {
 .second__item__price__title {
 	color: #000;
 	font-family: "Roboto", sans-serif;
-	font-size: 32px;
+	font-size: 24px;
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
@@ -225,7 +227,7 @@ html {
 .second__item__price__container p {
 	color: #000;
 	font-family: "Jua", sans-serif;
-	font-size: 24px;
+	font-size: 18px;
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
@@ -255,7 +257,7 @@ html {
 .third__item__price__title {
 	color: #000;
 	font-family: "Roboto", sans-serif;
-	font-size: 32px;
+	font-size: 24px;
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
@@ -271,7 +273,7 @@ html {
 .third__item__price__container p {
 	color: #000;
 	font-family: "Jua", sans-serif;
-	font-size: 24px;
+	font-size: 18px;
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
@@ -291,7 +293,7 @@ html {
 	color: #000;
 	text-align: center;
 	font-family: "Actor", sans-serif;
-	font-size: 48px;
+	font-size: 28px;
 	font-weight: 400;
 	padding-top: 36px;
 	padding-bottom: 64px;
@@ -307,7 +309,7 @@ html {
 .thirdSection__content__text h3 {
 	color: #000;
 	font-family: "Roboto", sans-serif;
-	font-size: 32px;
+	font-size: 24px;
 	font-weight: 400;
 	margin-bottom: 12px;
 }
@@ -315,7 +317,7 @@ html {
 .thirdSection__content__text__color {
 	color: #960707;
 	font-family: "Actor", sans-serif;
-	font-size: 24px;
+	font-size: 14px;
 	font-weight: 400;
 	margin-bottom: 8px;
 }
@@ -323,7 +325,7 @@ html {
 .thirdSection__content__text__info {
 	color: #000;
 	font-family: "Actor", sans-serif;
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: 400;
 }
 
@@ -341,7 +343,7 @@ html {
 	color: #000;
 	text-align: center;
 	font-family: "Actor", sans-serif;
-	font-size: 48px;
+	font-size: 28px;
 	font-weight: 400;
 	padding-top: 36px;
 	padding-bottom: 64px;
@@ -373,13 +375,49 @@ html {
 	color: #000;
 	text-align: center;
 	font-family: "JejuHallasan", sans-serif;
-	font-size: 40px;
+	font-size: 24px;
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
 }
 
+/* form */
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+input,
+textarea {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 333ms ease;
+}
+button:hover {
+    background-color: #0056b3;
+}
+
 .maps {
 	width: 350px;
-	height: 350px;
+	height: 446px;
 }

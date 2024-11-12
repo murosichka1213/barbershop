@@ -15,15 +15,10 @@
 				<a href="#thirdSection">Майстер</a>
 				<a href="#fourthSection">Роботи</a>
 				<a href="#footer">Локація</a>
-				<p>
-					м.Сокаль <br />
-					пл.Січових Стрільців <br />
-					14/1 <br />
-					0(93)2275080
-				</p>
+				
 
 				<div class="nav__links">
-					<a href="https://www.instagram.com/" id="instagram">
+					<a href="https://www.instagram.com/simplebarbershop_sokal?igsh=MWwwZnY4cXVzN3RvMw==" id="instagram">
 						<svg
 							viewBox="0 0 24 24"
 							fill="none"
@@ -44,7 +39,7 @@
 							</g>
 						</svg>
 					</a>
-					<a href="https://web.telegram.org/k/" id="telegram">
+					<a href="https://web.telegram.org/a/#759598381" id="telegram">
 						<svg
 							viewBox="0 0 24 24"
 							fill="none"
@@ -122,7 +117,10 @@
 			</div>
 		</nav>
 		<div class="firstSection" id="firstSection">
-			<img src="./photos/photo1.jpg" alt="PhotoMan" />
+			<video width="310" height="565" controls>
+				<source src="./photos/video.mp4" type="video/mp4">
+				Ваш браузер не підтримує відтворення відео.
+			  </video>
 
 			<div class="firstSection__content">
 				<h2 class="firstSection__content__title">
@@ -266,12 +264,45 @@
 		</div>
 
 		<footer class="footer" id="footer">
-			<h3 class="footer__title">
-				м.Сокаль<br />
-				пл.Січових Стрільців 14/1<br />
-				0(93)2275080<br />
-				SimpleBarbershop@gmail.com
-			</h3>
+			<form action="#" method="post">
+				<label for="name">Name</label>
+				<input
+					type="text"
+					id="name"
+					name="name"
+					placeholder="Your name"
+					required
+				/>
+	
+				<label for="email">Email</label>
+				<input
+					type="email"
+					id="email"
+					name="email"
+					placeholder="Your email"
+					required
+				/>
+	
+				<label for="subject">Subject</label>
+				<input
+					type="text"
+					id="subject"
+					name="subject"
+					placeholder="Subject"
+					required
+				/>
+	
+				<label for="message">Message</label>
+				<textarea
+					id="message"
+					name="message"
+					placeholder="Your message"
+					rows="5"
+					required
+				></textarea>
+	
+				<button type="submit">Send Message</button>
+			</form>
 
 			<iframe
 				class="maps"
